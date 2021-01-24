@@ -26,9 +26,9 @@ Video tutorials on controlling IIWA from python [are available in here](https://
 
 --------------------------------------
 
-# To test the iiwaPy
+# To test the iiwaPy3
 
-To test the iiwaPy follow the steps:
+To test the iiwaPy3 follow the steps:
 
 ## On PC side:
 1- Establish a peer to peer connection between the PC and the robot, [described in videos 1 and 2 of the play list](https://www.youtube.com/playlist?list=PLz558OYgHuZd-Gc2-OryITKEXefAmrvae);
