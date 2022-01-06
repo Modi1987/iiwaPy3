@@ -74,7 +74,7 @@ class mySock:
     def receive(self):
         daBytes=self.sock.recv(1024)
         confirmationMessage=daBytes.decode('utf-8')
-        return confirmationMessage;
+        return confirmationMessage
         
 
         
