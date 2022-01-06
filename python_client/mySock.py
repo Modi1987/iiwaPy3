@@ -57,7 +57,7 @@ class mySock:
             # self.buff.truncate(0)
             #print(command)
             try:
-                self.send(command)
+                self.send(daMessage)
                 returnAckNack=self.receive()
                 #print(returnAckNack)
                 if returnAckNack.find('done')==-1:
