@@ -57,7 +57,7 @@ class mySock:
             # self.buff.truncate(0)
             #print(command)
             try:
-                self.send(command)
+                self.send(daMessage)
                 returnAckNack=self.receive()
                 #print(returnAckNack)
                 if returnAckNack.find('done')==-1:
@@ -74,7 +74,7 @@ class mySock:
     def receive(self):
         daBytes=self.sock.recv(1024)
         confirmationMessage=daBytes.decode('utf-8')
-        return confirmationMessage;
+        return confirmationMessage
         
 
         
