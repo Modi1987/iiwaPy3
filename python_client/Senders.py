@@ -7,6 +7,7 @@ Modified 3rd-Jan-2021
 """
 
 import math
+import time
 
 import numpy as np
 
@@ -262,5 +263,6 @@ class Senders:
         # Wait for the user to stop precise hand guiding
         if message == "done\n":
             print("Hand guiding function terminated!")
+            time.sleep(5)
         else:
             raise Exception("Unexpected error occurred while hand guiding")
