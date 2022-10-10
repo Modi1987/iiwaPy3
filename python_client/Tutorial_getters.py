@@ -10,11 +10,13 @@ Modified on 1st-Jan-2021
 @author: Mohammad SAFEEA
 
 """
-from iiwaPy3 import iiwaPy3
 import time
-ip='172.31.1.147'
-#ip='localhost'
-iiwa=iiwaPy3(ip)
+
+from iiwaPy3 import iiwaPy3
+
+ip = '172.31.1.147'
+# ip='localhost'
+iiwa = iiwaPy3(ip)
 iiwa.setBlueOn()
 time.sleep(2)
 iiwa.setBlueOff()
@@ -47,13 +49,12 @@ try:
     print('Rotation of EEF, fixed rotation angles (X,Y,Z)')
     print(iiwa.getEEFCartizianOrientation())
     time.sleep(0.1)
-    
+
     print('Joints positions has been streamed external torques are:')
     print(iiwa.getEEFCartizianOrientation())
     time.sleep(0.1)
-    
+
 except:
     print('an error happened')
-    
-iiwa.close()
 
+iiwa.close()
