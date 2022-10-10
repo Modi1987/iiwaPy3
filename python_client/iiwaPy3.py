@@ -136,8 +136,12 @@ class iiwaPy3:
     def sendJointsPositions(self, x):
         return self.sender.sendJointsPositions(x)
 
-    def handGuiding(self, weight_tool, centre_mass):
-        return self.sender.handGuiding(weight_tool, centre_mass)
+    """
+    Precise hand guiding
+    """
+
+    def preciseHandGuiding(self, weight_tool, centre_mass):
+        return self.sender.preciseHandGuiding(weight_tool, centre_mass)
 
     # getters
     def getEEFPos(self):

@@ -223,8 +223,11 @@ class Senders:
         buff = buff + '\n'
         self.send(buff)
 
-    def handGuiding(self, weight_tool, centre_mass):
+    def preciseHandGuiding(self, weight_tool, centre_mass):
+        # Tool weight in negative z direction
         weight_tool = -1 * weight_tool
+
+        # Convert centre of mass into numpy array in m
         centre_mass = np.array(centre_mass)
         centre_mass = centre_mass / 1000
 
@@ -242,6 +245,8 @@ class Senders:
             return
 
         num = 10000
+
+        # Build command
         buff = f'preciseHandGuiding1_{str(math.ceil(weight_tool * num) / num)}_' \
                f'{str(math.ceil(centre_mass[0] * num) / num)}_' \
                f'{str(math.ceil(centre_mass[1] * num) / num)}_' \
@@ -253,6 +258,8 @@ class Senders:
 
         message = self.send(buff)
         print(message + "1")
+
+        # Wait for the user to stop precise hand guiding
         if message == "done\n":
             print("Hand guiding function terminated!")
         else:
