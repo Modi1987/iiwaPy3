@@ -26,7 +26,7 @@ class Senders:
 
     # EEF command
     def sendEEfPosition(self, x):
-        if (len(x) != 6):
+        if len(x) != 6:
             print('Error in sender function [sendEEfPositions]')
             print('EEF position shall be an array of 6 elements')
             return
@@ -44,7 +44,7 @@ class Senders:
         self.send(buff)
 
     def sendEEfPositions(self, x):
-        if (len(x) != 6):
+        if len(x) != 6:
             print('Error in sender function [sendEEfPositions]')
             print('EEF position shall be an array of 6 elements')
             return
@@ -84,7 +84,7 @@ class Senders:
 
     # EEF command utility function    
     def sendEEFPositionWithFeedback(self, cmd, x):
-        if (len(x) != 6):
+        if len(x) != 6:
             print('Error in sender function [sendEEFPositionWithFeedback]')
             print('EEF position shall be an array of 6 elements')
             return
@@ -103,7 +103,7 @@ class Senders:
 
     # Joint space functions
     def sendJointsPositions(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositions]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -118,7 +118,7 @@ class Senders:
         self.send(buff)
 
     def sendJointsPositionsGetMTorque(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositionsGetMTorque]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -133,7 +133,7 @@ class Senders:
         return getDoubleFromString(self.send(buff), 7)
 
     def sendJointsPositionsGetActualEEFpos(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositionsGetExTorque]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -148,7 +148,7 @@ class Senders:
         return getDoubleFromString(self.send(buff), 6)
 
     def sendJointsPositionsGetEEF_Force_rel_EEF(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositionsGetExTorque]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -163,7 +163,7 @@ class Senders:
         return getDoubleFromString(self.send(buff), 6)
 
     def sendJointsPositionsGetExTorque(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositionsGetExTorque]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -178,7 +178,7 @@ class Senders:
         return getDoubleFromString(self.send(buff), 7)
 
     def sendJointsPositionsGetActualJpos(self, x):
-        if (len(x) != 7):
+        if len(x) != 7:
             print('Error in sender function [sendJointsPositionsGetActualJpos]')
             print('Joint positions shall be an array of 7 elements')
             return
@@ -194,9 +194,9 @@ class Senders:
 
     # Functions for arc motion
     def sendCirc1FramePos(self, x):
-        if (len(x) != 6):
+        if len(x) != 6:
             print('Error in sender function [sendCirc1FramePos]')
-            print('Frame cooridnate is an array of 6 elements [x,y,z,alpha,beta,gamma] ')
+            print('Frame coordinate is an array of 6 elements [x,y,z,alpha,beta,gamma] ')
             return
         num = 10000
         buff = 'cArtixanPositionCirc1_'
@@ -209,7 +209,7 @@ class Senders:
         self.send(buff)
 
     def sendCirc2FramePos(self, x):
-        if (len(x) != 6):
+        if len(x) != 6:
             print('Error in sender function [sendCirc2FramePos]')
             print('Frame cooridnate is an array of 6 elements [x,y,z,alpha,beta,gamma] ')
             return

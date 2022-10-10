@@ -64,7 +64,7 @@ try:
     iiwa.movePTPJointSpace(jPos, vRel)
     # Motion variables
     w = 0.6  # Angular velocity of the sinusoidal motion
-    theta = 0  # Motion displacment from equilibrium
+    theta = 0  # Motion displacement from equilibrium
     interval = 2 * math.pi  # interval of motion
     a = math.pi / 6  # Amplitude of motion
     counter = 0  # To count the number of iterations
@@ -76,7 +76,7 @@ try:
     cOMx = 0.0
     cOMy = 0.0
     cOMz = 0.0
-    # Define stifness data
+    # Define stiffness data
     cStiness = 900
     rStifness = 80
     nStifness = 50

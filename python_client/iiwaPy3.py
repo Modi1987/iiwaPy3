@@ -9,7 +9,7 @@ from .mySock import mySock
 class iiwaPy3:
     getters = 0
     realtime = 0
-    gnerealPorpuse = 0
+    generalPurpose = 0
 
     def __init__(self, ip, trans=(0, 0, 0, 0, 0, 0)):
         print('This is a python3 wrapper for the KUKA Sunrise Toolbox')

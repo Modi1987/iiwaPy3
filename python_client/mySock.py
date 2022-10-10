@@ -36,14 +36,14 @@ class mySock:
             if not (num == 0):
                 flag = True
                 break
-        if flag == False:
-            print('No TCP transofrm in Flange Frame is defined,')
+        if not flag:
+            print('No TCP transform in Flange Frame is defined,')
             print('The following (default) TCP transform is utilized')
             print(trans)
             return
         else:
             # Rrint info about the current operation
-            print('Trying to mount the follwoing TCP transform:')
+            print('Trying to mount the following TCP transform:')
             stringTuple = ('x (mm)', 'y (mm)', 'z (mm)', 'alfa (rad)', 'beta (rad)', 'gamma (rad)')
             for i in range(6):
                 print(stringTuple[i] + ': ' + str(trans[i]))

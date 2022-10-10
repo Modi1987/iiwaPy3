@@ -29,14 +29,14 @@ iiwa.setBlueOff()
 # read some data from the robot
 try:
     # Move to an initial position
-    jPos = [0, 0, 0, -math.pi / 2, 0, math.pi / 2, 0];
+    jPos = [0, 0, 0, -math.pi / 2, 0, math.pi / 2, 0]
     print("Moving the robot in joint space to angular position")
     print(jPos)
     vRel = [0.1]
     print("With a relative velocity")
     print(vRel[0])
     iiwa.movePTPJointSpace(jPos, vRel)
-    # Get current cartezian position
+    # Get current Cartesian position
     print("Current Cartesian pose is")
     cPos = iiwa.getEEFPos()
     print(cPos)
@@ -58,7 +58,7 @@ try:
     cPos[2] = cPos[2] - 50
     iiwa.movePTPLineEEF(cPos, vel)
     # Testing PTP line relative motions
-    jPos = [0, math.pi * 20 / 180, 0, -math.pi * 70 / 180, 0, math.pi * 60 / 180, 0];
+    jPos = [0, math.pi * 20 / 180, 0, -math.pi * 70 / 180, 0, math.pi * 60 / 180, 0]
     vRel = [0.1]
     iiwa.movePTPJointSpace(jPos, vRel)
     # Print current Cartesian position
@@ -84,7 +84,7 @@ try:
     # Move to an initial position
     print('Moving on Arcs')
     print('First going to some initial configuration')
-    jPos = [0, -math.pi * 10 / 180, 0, -math.pi * 100 / 180, math.pi * 90 / 180, math.pi / 2, 0];
+    jPos = [0, -math.pi * 10 / 180, 0, -math.pi * 100 / 180, math.pi * 90 / 180, math.pi / 2, 0]
     print("Moving the robot in joint space to angular position")
     print(jPos)
     vRel = [0.1]
@@ -124,17 +124,17 @@ try:
     k = [1, 1, 1]
     vel = [100]
     c = [cen[0], cen[1], cen[2]]
-    print('Moving on an incliend Arc')
+    print('Moving on an inclined Arc')
     iiwa.movePTPArc_AC(theta, c, k, vel)
-    # Go back to beggining point
+    # Go back to beginning point
     vel = [150]  # velocity mm/sec
     iiwa.movePTPLineEEF(begginingPoint, vel)
-    # Move on an Arc in the XY plange
-    # using functiom movePTPArcXY_AC
+    # Move on an Arc in the XY plane
+    # using function movePTPArcXY_AC
     theta = [1.98 * math.pi]
     c = [cen[0], cen[1]]
     vel = [150]
-    print('Moving on an incliend Arc parallel to XY plane')
+    print('Moving on an inclined Arc parallel to XY plane')
     iiwa.movePTPArcXY_AC(theta, c, vel)
 
 except:

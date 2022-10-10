@@ -52,7 +52,7 @@ try:
     # Read current joints positions
     jpos = iiwa.getJointsPos()
     jpos0_6 = jpos[index]
-    print("Currnet joints positions")
+    print("Current joints positions")
     print(jpos)
     # Define the load data
     weightOfTool = 1.0  # 1 kg
@@ -80,13 +80,13 @@ try:
             t_0 = getSecs()
             counter = counter + 1
 
-    deltat = getSecs() - t0;
+    deltat = getSecs() - t0
     # movig point to point again
     print('Turning off realtime control')
     iiwa.realTime_stopDirectServoJoints()
     print('Realtime control turned off')
     time.sleep(0.5)
-    jPos = [0, 0, 0, -math.pi / 2, 0, math.pi / 2, 0];
+    jPos = [0, 0, 0, -math.pi / 2, 0, math.pi / 2, 0]
     print('Moving in joint space to position')
     print(jPos)
     vRel = [0.1]

@@ -40,7 +40,7 @@ class RealTime:
         time.sleep(0.3)
 
     def realTime_startImpedanceJoints(self, weightOfTool, cOMx, cOMy, cOMz, cStiness, rStifness, nStifness):
-        theCommand = 'startSmartImpedneceJoints'
+        theCommand = 'startSmartImpedanceJoints'
         theCommand = theCommand + '_' + str(weightOfTool)
         theCommand = theCommand + '_' + str(cOMx)
         theCommand = theCommand + '_' + str(cOMy)

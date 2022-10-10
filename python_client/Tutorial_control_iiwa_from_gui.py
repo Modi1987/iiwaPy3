@@ -44,7 +44,7 @@ class App:
         self.commandsList = []
         self.commandsAngleList = []
 
-        root.title('Control iiwa remotly from external PC')
+        root.title('Control iiwa remotely from external PC')
         mainFrame = Frame(root)
         mainFrame.pack()
 
@@ -154,7 +154,7 @@ class App:
                 # print "value of joint angle "+str(i)
                 # print self.jText[i].get()
             self.connection_state = True
-            message = "Connection established succefully"
+            message = "Connection established successfully"
             self.printMessage(message, '#0000ff')
         except:
             message = "Error, could not connect at the specified IP"
@@ -177,7 +177,7 @@ class App:
             message = "Disconnected successfully"
             self.printMessage(message)
         except:
-            message = "Error could not disconnct"
+            message = "Error could not disconnect"
             self.printMessage(message)
             return
 

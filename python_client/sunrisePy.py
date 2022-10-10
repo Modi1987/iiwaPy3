@@ -9,7 +9,7 @@ from mySock import mySock
 class sunrisePy:
     getters = 0
     realtime = 0
-    gnerealPorpuse = 0
+    generalPurpose = 0
 
     def __init__(self, ip):
         port = 30001
