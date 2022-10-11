@@ -10,11 +10,13 @@ Modified on 1st-Jan-2021
 @author: Mohammad SAFEEA
 
 """
-from iiwaPy3 import iiwaPy3
 import time
-ip='172.31.1.147'
-#ip='localhost'
-iiwa=iiwaPy3(ip)
+
+from iiwaPy3 import iiwaPy3
+
+ip = '172.31.1.147'
+# ip='localhost'
+iiwa = iiwaPy3(ip)
 iiwa.setBlueOn()
 time.sleep(2)
 iiwa.setBlueOff()
@@ -26,7 +28,7 @@ try:
     print('Forces acting at end effector are')
     print(iiwa.getEEF_Force())
     time.sleep(0.1)
-    print('Cartezian position (X,Y,Z) of end effector')
+    print('Cartesian position (X,Y,Z) of end effector')
     print(iiwa.getEEFCartizianPosition())
     time.sleep(0.1)
     print('Moment at end effector')
@@ -35,7 +37,7 @@ try:
     print('Joints positions')
     print(iiwa.getJointsPos())
     time.sleep(0.1)
-    print('External torques at the joitns')
+    print('External torques at the joints')
     print(iiwa.getJointsExternalTorques())
     time.sleep(0.1)
     print('Measured torques at the joints')
@@ -47,13 +49,12 @@ try:
     print('Rotation of EEF, fixed rotation angles (X,Y,Z)')
     print(iiwa.getEEFCartizianOrientation())
     time.sleep(0.1)
-    
+
     print('Joints positions has been streamed external torques are:')
     print(iiwa.getEEFCartizianOrientation())
     time.sleep(0.1)
-    
+
 except:
     print('an error happened')
-    
-iiwa.close()
 
+iiwa.close()
