@@ -198,19 +198,19 @@ class iiwaPy3:
         self.set.setPin1On()
 
     def setPin2Off(self):
-        self.set.setPin1Off()
+        self.set.setPin2Off()
 
     def setPin2On(self):
-        self.set.setPin1On()
+        self.set.setPin2On()
 
     def setPin11Off(self):
-        self.set.setPin1Off()
+        self.set.setPin11Off()
 
     def setPin11On(self):
-        self.set.setPin1On()
+        self.set.setPin11On()
 
     def setPin12Off(self):
-        self.set.setPin1Off()
+        self.set.setPin12Off()
 
     def setPin12On(self):
-        self.set.setPin1On()
+        self.set.setPin12On()
