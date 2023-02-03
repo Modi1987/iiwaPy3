@@ -2,10 +2,9 @@
 
 # iiwaPy3
 
-Python3 librarry used to control KUKA iiwa robots, the 7R800 and the 14R820, from an external computer.
+Python3 library used to control KUKA iiwa robots, the 7R800 and the 14R820, from an external computer.
 
-Using the iiwaPy3 the utilizer can control the iiwa robot from his/her computer without a need for programming  the industerial manipulator.
-
+Using the iiwaPy3 the utilizer can control the iiwa robot from his/her computer without a need for programming the industrial manipulator.
 A basic knowledge of using python is required.
 
 
