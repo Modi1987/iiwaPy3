@@ -45,6 +45,22 @@ From inside python IDE run the tutorial script [Tutorial_getters, available here
 (All python files starting with "Tutorial" are tutorial scripts written around iiwaPy3 class to control the robot)
 
 
+## Citation
+Please cite the following article in your publications if it helps your research 🙏 :
+
+```javascript
+@article{doi:10.1080/0951192X.2023.2177744,
+author = {M. Safeea and P. Neto},
+title = {Model-based hardware in the loop control of collaborative robots: Simulink and Python based interfaces},
+journal = {International Journal of Computer Integrated Manufacturing},
+volume = {0},
+number = {0},
+pages = {1-13},
+year  = {2023},
+publisher = {Taylor & Francis},
+doi = {10.1080/0951192X.2023.2177744},
+}
+```
 --------------------------------------
 
 Copyright: Mohammad Safeea, first commit 20th-Jan-2021
